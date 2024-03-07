@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Egan Frelich</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/portfolio.js"></script>
+</head>
+
+<body>
+    <header>
+        <div id="headerWrapper">
+            <!--Used to help with certain css rules-->
+            <div id="topOfHeader">
+                <h1><a href="#">Egan Frelich</a></h1>
+                <img src="media/hamburger-icon.png" id="hamburgerMenu" alt="menu icon">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#personalProjects">Personal Projects</a></li>
+                    <li><a href="#academicProjects">Class Projects</a></li>
+                    <li><a href="#artwork">Art</a></li>
+                    <li><a href="media/resume.pdf">Resume</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div id="topSpacing"></div>
+        <section id="overview">
+            <section id="about">
+                <div id="aboutText">
+                    <p>Egan Frelich - Always giving thought to game design</p>
+                    <h2>About</h2>
+                    <p>I'm a Game Design and Development student at RIT who is especially interested in the design of
+                        singleplayer games that are driven by story and exploration. With several different skills, such
+                        as game design, programming, and 2D art, I have many different roles that I can potentially fill on
+                        a team. I have worked on a few different personal projects already, and have many others that I
+                        would like to work on in the future.</p>
+                    <h3>Contact Info and Other Sites</h3>
+                    <ul>
+                        <li>Email: egan@frelich.us</li>
+                        <li>Itch.io: <a href="https://lackofbeef.itch.io">https://lackofbeef.itch.io</a></li>
+                        <li>GitHub: <a href="https://github.com/LackOfBeef">https://github.com/LackOfBeef</a></li>
+                    </ul>
+                </div>
+                <img src="media/photo.jpeg" alt="" id="portrait">
+            </section>
+            <section id="gallery">
+                <h2>Personal Projects</h2>
+                <p>Various projects made outside of a school setting.</p>
+                <div class="projects">
+                    <div class="singleProject">
+                        <h3>Canceled Untitled Rabbit Game</h3>
+                        <img src="media/rabbitgame-image1.png" alt="" class="smallScreenshot">
+                        <p>A metroidvania-style platformer game, with multiple areas, bosses, and abilities.</p>
+                        <p><a href="#rabbitGame">See project</a></p>
+                    </div>
+                    <div class="singleProject">
+                        <h3>Covering Weaknesses</h3>
+                        <img src="media/coveringweaknesses-image3.png" alt="" class="smallScreenshot">
+                        <p>A game developed in 48 hours for GMTK Game Jam 2020.</p>
+                        <p><a href="#coveringWeaknesses">See project</a></p>
+                    </div>
+                </div>
+                <h2>Academic Projects</h2>
+                <p>Notable projects made in school.</p>
+                <div class="projects">
+                    <!--<div class="singleProject">
+                        <h3>Gun Wizard</h3>
+                        <img src="media/rabbitgame-image1.png" alt="" class="smallScreenshot">
+                        <p>A game developed in MonoGame in a team of 5.</p>
+                        <p><a href="#gunWizard">See project</a></p>
+                    </div>-->
+                    <div class="singleProject">
+                        <h3>Cheese Master</h3>
+                        <img src="media/cheesemaster-screenshot2.png" alt="" class="smallScreenshot">
+                        <p>A web game developed using PIXI JS.</p>
+                        <p><a href="#cheeseMaster">See project</a></p>
+                    </div>
+                    <div class="singleProject">
+                        <h3>Tower of Lumeth</h3>
+                        <img src="media/tower-image1.png" alt="" class="smallScreenshot">
+                        <p>A puzzle game developed in 5 weeks in a group of 5.</p>
+                        <p><a href="#towerOfLumeth">See project</a></p>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <!--Personal projects-->
+        <section id="personalProjects">
+            <h2>Personal Projects</h2>
+            <p>Projects made for personal reasons which demonstrate game design or software development skills.</p>
+            <section id="rabbitGame">
+                <h3>Canceled Untitled Rabbit Game</h3>
+                <h4>Description</h4>
+                <p>A game developed solo using Unity and C# on and off from August of 2018 to December of 2022.</p>
+                <p>The game is a metroidvania-style platformer inspired by games such as Cave Story, Hollow
+                    Knight, Metroid: Zero Mission, and The Legend of Zelda: Link's Awakening. The gameplay focuses on
+                    exploration, with simple platforming and enemy patterns.</p>
+                <p>The game uses a melee combat system, with ranged abilities that can be found throughout the
+                    world. Exploration is relatively nonlinear, with a few different paths that can be taken through the
+                    game. Optional health and magic upgrades can be found as well.</p>
+                <p>Through the development of this game I learned how to create larger-scale projects. This game was a learning experience for me in both the programming and design aspects of game development.</p>
+                <p>The game makes use of Unity's built in animation tools and uses tilemaps for level designs. Throughout development I made careful plans for how the game's world and progression should be designed, being sure to think about the game as a whole.</p>
+                <h4>Features</h4>
+                <ul>
+                    <li>4 Areas</li>
+                    <li>3 bosses</li>
+                    <li>7 different abilities</li>
+                </ul>
+                <h4>Screenshots</h4>
+                <div class="screenshots">
+                    <img src="media/rabbitgame-image1.png" alt="">
+                    <img src="media/rabbitgame-image2.png" alt="">
+                </div>
+                <h4>What was done</h4>
+                <ul>
+                    <li>All areas are playable and had their basic designs completed.</li>
+                    <li>3 bosses are partially implemented.</li>
+                    <li>1 boss is fully playable, but lacking in animation.</li>
+                    <li>All abilities are implemented and functional.</li>
+                    <li>Several graphical elements were created, as well as some music.</li>
+                </ul>
+            </section>
+            <section id="coveringWeaknesses">
+                <h3>Covering Weaknesses</h3>
+                <h4>Description</h4>
+                <p>A game developed solo in 48 hours using Unity and C# in July 2020 for GMTK Game Jam 2020.</p>
+                <p>The game has pseudo-turn-based gameplay in which the player controls two characters who must
+                    defeat a wave of enemies. One character cannot control their actions, while the other cannot control
+                    their target. There is a single wave of enemies for them to defeat. The player loses if either character's health
+                    drops to 0.</p>
+                    <p>This game allowed me to practice working with creative restrictions, as well as learn how to work under a deadline and release a finished product.</p>
+                <h4>Screenshots</h4>
+                <div class="screenshots">
+                    <img src="media/coveringweaknesses-image1.png" alt="">
+                    <img src="media/coveringweaknesses-image2.png" alt="">
+                    <img src="media/coveringweaknesses-image3.png" alt="">
+                </div>
+                <h4>Link to the Game</h4>
+                <p>Available on <a href="https://lackofbeef.itch.io/covering-weaknesses">itch.io</a></p>
+            </section>
+        </section>
+        <!--Starts on school projects-->
+        <section id="academicProjects">
+            <h2>Academic Projects</h2>
+            <p>Projects that were made for the purposes of schoolwork and display relevant skills.</p>
+            <!--I'll add Gun Wizarad if I can get screenshots. Currently I don't have aa functional version.-->
+            <!--<section id="gunWizard">
+                <h3>Gun Wizard</h3>
+                <h4>Description</h4>
+                <p>A game developed in a group of 5 over 2 months using C# and MonoGame. <br>
+                    A top down shooter with a single level, multiple enemy types, and power ups. I worked on
+                    programming
+                    the
+                    enemies and level loading, as well as various other tasks, including the basic outline of the
+                    level
+                    itself.</p>
+                <h4>Features</h4>
+                <ul>
+                    <li>1 level</li>
+                    <li>Health pickups and a fire rate power up</li>
+                    <li>3 enemy types - pulsers, turrets, and chasers</li>
+                </ul>
+                <h4>Screenshots</h4>
+                <div class="screenshots">
+                    <img src="media/gunwizardplaceholderimage.png" alt="">
+                    <img src="media/gunwizardplaceholderimage.png" alt="">
+                </div>
+            </section>-->
+            <section id="cheeseMaster">
+                <h3>Cheese Master</h3>
+                <h4>Description</h4>
+                <p>A game developed solo over the course of 2 weeks using Javascript and PIXI JS. </p>
+                <p>A top down action adventure game with 5 levels. The game is centered around a dash mechanic which is
+                    used to evade enemies.</p>
+                <p>In this project I learned how to use Javascript to develop games for the web, and also practiced my
+                    game design skills. This was the first fully-featured game I've made for school outside of group projects.</p>
+                <p>The game uses AABB collision detection and loads levels from Javascript objects and arrays.</p>
+                <h4>Features</h4>
+                <ul>
+                    <li>5 levels</li>
+                    <li>A lock and key system</li>
+                    <li>2 enemy types - slimes and bouncers</li>
+                    <li>Original pixel art graphics</li>
+                </ul>
+                <h4>Screenshots</h4>
+                <div class="screenshots" id="cheeseMasterScreenshots">
+                    <img src="media/cheesemaster-screenshot1.png" alt="">
+                    <img src="media/cheesemaster-screenshot2.png" alt="">
+                </div>
+                <h4>Link to the game</h4>
+                <p>Available to play <a href="../project3/game.html">here</a></p>
+            </section>
+            <section id="towerOfLumeth">
+                <h3>Tower of Lumeth</h3>
+                <h4>Description</h4>
+                <p>A puzzle game developed in 5 weeks in a team of 5. </p>
+                <p>A top down block pushing puzzle game with 14 levels and 4 special abilities.</p>
+                <p>In this project I worked on level designs, fully designing most and revising the designs of the rest. 
+                    I also created all of the art assets outside of menus.</p>
+                <h4>Features</h4>
+                <ul>
+                    <li>Push, pull, swap, and teleport abilities</li>
+                    <li>14 levels that teach and make use of these abilities</li>
+                    <li>Hand drawn graphics</li>
+                </ul>
+                <h4>Screenshots</h4>
+                <div class="screenshots" id="towerOfLumethScreenshots">
+                    <img src="media/tower-image1.png" alt="">
+                    <img src="media/tower-image2.png" alt="">
+                </div>
+                <h4>Link to the game</h4>
+                <p>Available on <a href="https://agamertag.itch.io/tower-of-lumeth">itch.io</a></p>
+            </section>
+        </section>
+        <section id="artwork">
+            <h3>My Artwork</h3>
+            <div id="artDisplay">
+                <div>
+                    <h4>Walk Cycle Animation</h4>
+                    <img src="media/walk-cycle.gif" alt="" class="artItem">
+                </div>
+                <div>
+                    <h4>Griffin-like Creature Design</h4>
+                    <img src="media/chicken-creature.png" alt="" class="artItem">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>©2023 Egan Frelich</p>
+    </footer>
+</body>
+
+</html>

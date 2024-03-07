@@ -239,8 +239,7 @@ img.smallScreenshot{
     width: 100%;
 }
 .artItem {
-    width: 500px;
-    height: 500px;
+    height: 350px;
 }
 @media screen and (max-width: 630px) {
     .screenshots {

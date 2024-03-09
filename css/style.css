@@ -17,6 +17,20 @@ header {
 #topOfHeader {
     margin-right: auto;
 }
+#about {
+    display: flex;
+}
+#about div {
+    display: block;
+    margin: 0 1rem;
+    padding: 2rem 2rem;
+    width: 50%;
+    background-color: #e0e0e0;
+}
+#about div h2 {
+    margin: 0 0 0 0;
+}
+
 header h1 {
     margin: 0 auto 0 2rem;
     margin-right: auto;
@@ -181,12 +195,12 @@ footer {
     margin: 0 0.5rem 0.5rem 0;
     width: 310px;
 }
-section#about {
+/*section#about {
     display: grid;
     grid-template-columns: 1fr 300px;
     grid-template-rows: 25rem;
     grid-template-areas: "text" "image";
-}
+}*/
 div#artDisplay {
     display: flex;
     flex-flow: row wrap;
@@ -200,13 +214,13 @@ div#artDisplay {
     section#about {
         display: block;
     }
+    section#about div {
+        width: auto;
+    }
     #about img {
         display: block;
         margin: 0 auto;
     }
-}
-#aboutText {
-    margin-right: 2rem;
 }
 section#rabbitGame, section#coveringWeaknesses, section#cheeseMaster, section#overview {
     border-bottom: 1px solid black;

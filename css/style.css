@@ -2,7 +2,10 @@ body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     /*background-color: rgb(126, 155, 252);*/
-    background-color: #e0e0e0;
+    /*background-color: #e0e0e0;*/
+    background-image: url("../media/softscapehardscape_blurred.jpg");
+    background-attachment: fixed;
+    background-size: 100% auto;
 }
 header {
     padding: 1rem 0;

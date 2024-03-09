@@ -6,7 +6,7 @@ body {
 }
 header {
     padding: 1rem 0;
-    background-color: gray;
+    background-color: black;
     color: white;
     position: fixed;
     width: 100vw;
@@ -246,8 +246,7 @@ img.smallScreenshot{
         background-color: white;
     }
     .artItem {
-        width: 400px;
-        height: 400px;
+        height: 350px;
     }
 }
 @media screen and (max-width: 450px) {
@@ -268,7 +267,6 @@ img.smallScreenshot{
         height: 100%;
     }
     .artItem {
-        width: 200px;
         height: 200px;
     }
 }

@@ -25,7 +25,7 @@ header {
 }
 #about div {
     display: block;
-    margin: 0 1rem;
+    margin: 0 1rem 0 0;
     padding: 2rem 2rem;
     width: 50%;
     background-color: #e0e0e0;
@@ -188,45 +188,40 @@ footer {
 }
 /*Styling for individual sections or elements*/
 .projects {
+    background-color: #e0e0e0;
+    padding: 0 1rem 0 1rem;
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
 }
 .singleProject {
-    border: 1px solid gray;
-    background-color:#e0e0e0;
+    background-color: white;
     padding: 1rem;
-    margin: 0 0.5rem 0.5rem 0;
+    margin: 0.5rem 0.5rem 0.5rem 0;
     width: 310px;
 }
-/*section#about {
-    display: grid;
-    grid-template-columns: 1fr 300px;
-    grid-template-rows: 25rem;
-    grid-template-areas: "text" "image";
-}*/
+.singleProject img {
+    object-fit: contain;
+    height: 175px;
+    background-color: black;
+}
+.singleProject h3 {
+    margin-top: 0;
+    margin-bottom: 0.25rem;
+}
+.singleProject p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 div#artDisplay {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
 }
-#about img {
-    height: 403px;
-    width: 302px;
-}
-@media screen and (max-width: 780px) {
-    section#about {
-        display: block;
-    }
-    section#about div {
-        width: auto;
-    }
-    #about img {
-        display: block;
-        margin: 0 auto;
-    }
-}
-section#rabbitGame, section#coveringWeaknesses, section#cheeseMaster, section#overview {
-    border-bottom: 1px solid black;
+
+section.projectSect {
+    border-top: 1px solid black;
 }
 section#overview ,section#personalProjects, section#academicProjects, section#artwork {
     border: 2px solid black;
@@ -235,54 +230,95 @@ section#overview ,section#personalProjects, section#academicProjects, section#ar
     background-color: white;
 }
 
+.projectSect {
+    display: flex;
+    flex-flow: row;
+    align-items: flex-start;
+    height: fit-content;
+}
+
+.projectSect div {
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
 .screenshots {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+    flex-flow: column;
     background-color:#e0e0e0;
     border: 1px solid gray;
 }
 .screenshots img {
-    width: 426px;
+    width: auto;
     height: 240px;
-    margin: 0.5rem;
+    padding: 0.5rem;
 }
-.screenshots#cheeseMasterScreenshots img {
-    width: 416px;
-    height: 320px;
-    margin: 0.5rem;
-}
+
 img.smallScreenshot{
     width: 100%;
 }
 .artItem {
     height: 350px;
 }
+
+@media screen and (max-width: 1100px) {
+    .screenshots img {
+        width: 340px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .projectSect {
+        flex-flow: column;
+    }
+    .screenshots {
+        flex-flow: row;
+        flex-wrap: wrap;
+    }
+    .screenshots img {
+        object-fit: contain;
+        height: 240px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    section#about {
+        display: block;
+    }
+    section#about div {
+        width: auto;
+        padding: 1rem;
+    }
+    section#about div * {
+        margin: auto;
+    }
+}
+
 @media screen and (max-width: 630px) {
     .screenshots {
         background-color: white;
+        border: 0px;
     }
     .artItem {
         height: 350px;
     }
 }
-@media screen and (max-width: 450px) {
-    #portrait {
-        width: 100%;
-        height: 100%;
-    }
-    .screenshots {
-        /*background-color: white;*/
-        display: inline;
-    }
+
+@media screen and (max-width: 560px) {
     .screenshots img {
-        width: 100%;
-        height: 100%;
+        height: auto;
     }
-    .screenshots#cheeseMasterScreenshots img {
-        width: 100%;
-        height: 100%;
+    .projects {
+        background-color: transparent;
     }
+    .singleProject {
+        border: 1px solid gray;
+        background-color: #e0e0e0;
+    }
+}
+
+@media screen and (max-width: 450px) {
     .artItem {
         height: 200px;
     }

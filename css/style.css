@@ -251,6 +251,12 @@ section#overview ,section#personalProjects, section#academicProjects, section#ar
     height: 240px;
     padding: 0.5rem;
 }
+iframe {
+    width: 426px;
+    height: 240px;
+    padding: 0.5rem;
+
+}
 
 img.smallScreenshot{
     width: 100%;
@@ -301,6 +307,11 @@ img.smallScreenshot{
     }
     .artItem {
         height: 350px;
+    }
+    iframe {
+        width: 320px;
+        height: 180px;
+        padding: 0.5rem;
     }
 }
 

@@ -221,9 +221,6 @@ div#artDisplay {
     justify-content: center;
 }
 
-section.projectSect {
-    border-top: 1px solid black;
-}
 section#overview ,section#personalProjects, section#academicProjects, section#artwork {
     border: 2px solid black;
     padding: 1rem;
@@ -232,9 +229,10 @@ section#overview ,section#personalProjects, section#academicProjects, section#ar
 }
 
 .projectSect {
+    border-top: 1px solid black;
     display: flex;
     flex-flow: row;
-    align-items: flex-start;
+    align-items: start;
     height: fit-content;
 }
 
@@ -242,7 +240,12 @@ section#overview ,section#personalProjects, section#academicProjects, section#ar
     margin: 0.5rem 0.5rem 0.5rem 0.5rem;
 }
 
+.projectSect .info {
+    flex-grow: 1;
+}
+
 .screenshots {
+    flex-grow: 0;
     display: flex;
     flex-flow: column;
     background-color:#e0e0e0;
